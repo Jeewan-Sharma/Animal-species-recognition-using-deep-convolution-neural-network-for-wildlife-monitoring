@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Animal Species Classification | Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Ubuntu|Merienda:400,300, 700&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="container container-flex">
+        <div class="self-title">
+            <img src="logo.png" alt="table" class="logo-img">
+            <h1>Animal Species Classificaiton</h1>
+            <p class="subtitle"> A Major Project by The Alliance</p>
+        </div>
+
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="home.html"> HOME</a></li>
+                <li class="nav-list-item"><a href="about.html">ABOUT</a></li>
+                <li class="nav-list-item"><a href="search.html">SEARCH</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container-2" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="left-side-col">
+                    <h1 class="welcome" >Upload or Enter the URL for
+                        Animal Species Classification
+                    </h1>
+                    <!-- <button class="search-btn">
+                        Upload
+                    </button>       -->
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="right-side-col">
+                    <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                    <button class="search-btn">
+                    <p><label for="file" style="cursor: pointer;">Upload</label></p>
+                    </button>
+                    <p><img id="output" width="200" /></p>
+                    <script>
+                        var loadFile = function(event) {
+	                    var image = document.getElementById('output');
+	                    image.src = URL.createObjectURL(event.target.files[0]);
+                        };
+                    </script>              
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+    </script>
+
+        <footer class="footsy">
+            <div class="row">
+                <div class="col-4">
+                    <h1>A Project by</h1>
+                    <ul>
+                        <li>Ayub Shrestha</li>
+                        <li>Jeewan Sharma</li>
+                        <li>Manjil Munankarmi</li>
+                    </ul>
+                </div>
+
+                <div class="col-4 address">
+                    <h1>Address</h1>
+                    <p>ACEM, Kupondole</p>
+                </div>
+
+                <div class="col-4">
+                    <h1 class="last-col">Contact Us</h1>
+                    <ul>
+                        <li><img class="contact" src="fb.png" alt="fb"></li>
+                        <li><img class="contact" src="logo.png" alt="logo"></li>
+                        <li><img class="contact" src="in.jpg" alt="in"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </footer>
+</body>
+
+
+
+
+</html>

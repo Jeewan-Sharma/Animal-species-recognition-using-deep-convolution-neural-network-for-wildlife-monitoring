@@ -1,0 +1,256 @@
+/* DEFAULTS */
+
+body{
+    width: 100%;
+    margin: 0;
+    font-family: Ubuntu;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.slides{
+    display: none;
+    height: 450px;
+    width: 700px;
+    box-shadow: 10px 10px 5px #ccc;
+    border-radius: 10px;
+}
+
+*{box-sizing: border-box;}
+
+
+/***** TYPOGRAPHY ****/
+
+h1, h2, h3 {
+    font-family: Lora;
+    color: #143774;
+}
+
+h1{
+    font-family: Lora;
+    color: #143774;
+    font-size: 2rem;
+    margin: -85px 0 0 110px;
+}
+
+a{
+    color: #1792d2;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    padding-bottom: 15px;
+}
+
+a:hover,
+a:focus{
+    color: #143774;
+
+}
+
+h1.welcome{
+    color: white;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+    font-family: Merienda;
+    padding-left: 31%;
+    padding-bottom: 5%;
+}
+
+h1.welcome-2{
+    color: white;
+    font-size: 35px;
+    margin: 0;
+    line-height: 70px;
+    font-family: Merienda;
+    padding-left: 11%;
+    padding-bottom: 5%;
+}
+
+p.to{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    line-height: 40px;
+    font-family: Merienda;
+    padding-left: 40%;
+    padding-bottom: 5%;
+}
+
+/**** LAYOUT ****/
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-2{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+header{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 2em 20px;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0 0 0 110px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.logo-img{
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}
+
+#section-1-gradient{
+    background: linear-gradient(#283c86, #45a247);
+}
+
+.left-side-col{
+    margin-left: 15%;
+    margin-top: 6%;
+}
+
+form{
+    position: relative;
+    margin-left: 420px;
+    
+}
+
+button.search-btn{
+    background-color: #1792d2 ;
+    font-family: Ubuntu;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 35%;
+    border: none;
+    box-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+}
+button.search-btn:hover{
+    opacity: 0.8;
+}
+
+footer.footsy{
+    background-color: aliceblue;
+    padding-left: 10%;
+}
+
+footer.footsy h1{
+    font-size: 25px;
+    margin: 0;
+    padding-top: 10%;
+    color: #143774;
+}
+
+footer.footsy p{
+    font-size: 25px;
+    color: #143774;
+}
+
+footer.footsy ul{
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+h1.last-col{
+    margin-top: 10%;
+}
+
+footer.footsy ul li{
+    color: #143774;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+
+.contact{
+    float: right;
+    padding-right: 20px;
+    display: inline;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.address{
+    padding-top: 0;
+    margin-top: -2%;
+}
+
+
+/**** CREATING NAVIGATION ****/
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li{
+    margin-left: 2em;
+    margin-top: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #143774;
+    margin-top: 50%;
+}
+
+nav ul li a:hover{
+    color: black;
+    padding-bottom: 10px;
+}
+
