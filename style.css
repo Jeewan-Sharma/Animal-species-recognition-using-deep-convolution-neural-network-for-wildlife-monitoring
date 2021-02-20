@@ -164,7 +164,7 @@ form{
     
 }
 
-button.search-btn{
+button.begin-btn{
     background-color: #1792d2 ;
     font-family: Ubuntu;
     color: white;
@@ -176,8 +176,47 @@ button.search-btn{
     box-shadow: 2px 2px 2px gray;
     cursor: pointer;
 }
-button.search-btn:hover{
+button.begin-btn:hover{
     opacity: 0.8;
+}
+
+button.upload-btn{
+    background-color: #1792d2 ;
+    font-family: Ubuntu;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 20%;
+    border: none;
+    box-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+}
+
+button.upload-btn:hover{
+    opacity: 0.8;
+}
+
+button.classify-btn{
+    background-color: #1792d2 ;
+    font-family: Ubuntu;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 20%;
+    border: none;
+    box-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+}
+
+button.classify-btn:hover{
+    opacity: 0.8;
+}
+
+.upimage{
+   position:relative; 
+   margin-left: 20%;
 }
 
 footer.footsy{
