@@ -80,12 +80,12 @@ a:focus{
 
 h1.welcome{
     color: white;
-    font-size: 56px;
+    font-size: 20px;
     margin: 0;
-    line-height: 70px;
+    line-height: 30px;
     font-family: Merienda;
-    padding-left: 31%;
-    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-bottom: 10%;
 }
 
 h1.welcome-2{
@@ -100,12 +100,12 @@ h1.welcome-2{
 
 p.to{
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     margin: 0;
-    line-height: 40px;
+    line-height: 30px;
     font-family: Merienda;
-    padding-left: 40%;
-    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-bottom: 10%;
 }
 
 /**** LAYOUT ****/
@@ -154,8 +154,13 @@ header{
 }
 
 .left-side-col{
-    margin-left: 15%;
-    margin-top: 6%;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.right-side-col{
+    margin-left: 5%;
+    margin-top: 4%;
 }
 
 form{
@@ -171,7 +176,7 @@ button.begin-btn{
     padding: 10px 30px;
     border-radius: 10px;
     font-size: 20px;
-    margin-left: 35%;
+    margin-left: 30%;
     border: none;
     box-shadow: 2px 2px 2px gray;
     cursor: pointer;
